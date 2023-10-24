@@ -1,5 +1,5 @@
 {% set name = "bmi-c" %}
-{% set version = "2.1" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/csdms/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 8bc3f23c37a04b0f1dc335e63ab54ae70098b3885f0b791c529b371e11470764
+  sha256: b42aa757fbf11cfda91aef54d74de9c3236452fd8eb13d6803b42a50e5d893d8
 
 build:
   number: 0
