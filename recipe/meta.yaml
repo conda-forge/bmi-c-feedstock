@@ -10,7 +10,7 @@ source:
   sha256: ec86cf7bc964cdaf083e98767adac40b7e5bf1737d2242a93737cda16b95b136
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -18,6 +18,7 @@ requirements:
     - cmake
     - {{ compiler('c') }}    # [unix]
     - {{ compiler('cxx') }}  # [win]
+    - {{ stdlib("c") }}
     - make  # [unix]
 
 test:
@@ -28,13 +29,13 @@ test:
     - if not exist %LIBRARY_LIB%\\pkgconfig\\bmic.pc exit 1  # [win]
 
 about:
-  home: https://bmi.readthedocs.io
+  home: https://csdms.colorado.edu/wiki/BMI
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'C specification for the Basic Model Interface'
+  summary: 'C mappings for the Basic Model Interface'
   description: |
-    C bindings for the CSDMS Basic Model Interface (BMI). This package
+    C mappings for the CSDMS Basic Model Interface (BMI). This package
     includes a header file with an interface to be implemented by a
     model developer when they add a BMI to their model.
   doc_url: https://bmi.readthedocs.io
