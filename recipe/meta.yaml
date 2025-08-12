@@ -10,7 +10,7 @@ source:
   sha256: ec86cf7bc964cdaf083e98767adac40b7e5bf1737d2242a93737cda16b95b136
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
